@@ -1,0 +1,50 @@
+.team-card-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* padding: 25px 15px 15px 15px; */
+  width: 250px;
+  height: 390px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  flex-shrink: 0;
+}
+
+.team-card-img-container {
+  width: 100%;
+  height: 275px;
+}
+
+.team-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-name {
+  font-family: "Lora", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.team-member-title {
+  font-family: "Lora", sans-serif;
+  font-size: 17px;
+  color: white;
+}
+
+.team-social-links-container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.fa-social-mod {
+  font-size: 20px;
+  color: white;
+}

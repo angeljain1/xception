@@ -1,0 +1,142 @@
+@media(max-width: 576px) {
+  .home-logo-main {
+    width: 320px;
+  }
+
+  .home-content-main-heading {
+    font-size: 25px;
+  }
+}
+
+@media(min-width: 576px) {
+  .home-logo-main {
+    width: 500px;
+  }
+
+  .home-content-main-heading {
+    font-size: 38px;
+  }
+
+  .home-header-line-break {
+    display: none;
+  }
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  background-color: #000;
+}
+
+.home-main-video-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-main-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+
+.home-content-main-heading {
+  padding: 0px 10px;
+  margin: 25px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  color: white;
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+}
+
+.neonBookmod {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 30px 10px 31px;
+  font-family: "Lora", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow:
+    -2px 4px 4px #091243,
+    0 0 10px #00D0FF,
+    inset 1px 1px 1px white;
+  color: #ffffff;
+  border: 2.5px solid white;
+  border-radius: 50px;
+  background-color: transparent;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.6),
+    2px 1px 4px rgba(0, 0, 0, 0.3),
+    2px 4px 3px rgba(3, 0, 128, 0.3),
+    0 0 7px 2px rgba(0, 208, 255, 0.6);
+  animation: flickering 5s infinite;
+  transition: all 0.25s ease-in;
+}
+
+.neonBookmod:hover {
+  background-color: #0085ff;
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  2% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  8% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+
+  28% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+
+  30% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  36% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+
+  100% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+}

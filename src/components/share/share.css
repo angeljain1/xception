@@ -1,0 +1,144 @@
+#share_btn {
+  position: fixed;
+  bottom: 20px;
+  Left: 20px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 60px;
+  z-index: 10;
+}
+
+#share_btn:before {
+  content: '\f1e0';
+  font-family: fontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff00ff, #8a2be2);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 30px;
+  margin: 0 2px;
+  transition: 0.4s;
+  z-index: 4;
+}
+
+#share_btn li {
+  position: absolute;
+  list-style: none;
+  transition: 0.5s;
+  width: 60px;
+  height: 60px;
+}
+
+#share_btn li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  margin: 0 2px;
+  font-size: 30px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#share_btn li a i {
+  pointer-events: none;
+}
+
+#share_btn.active:before {
+  width: 60px;
+}
+
+#share_btn li.facebook {
+  z-index: 3;
+}
+
+#share_btn li.twitter {
+  z-index: 2;
+}
+
+#share_btn li.whatsapp {
+  z-index: 1;
+}
+
+#share_btn li.other-socials {
+  z-index: 0;
+}
+
+#share_btn li.facebook a {
+  background: #3b5998;
+}
+
+#share_btn li.twitter a {
+  background: #55acee;
+}
+
+#share_btn li.whatsapp a {
+  background: #25d366;
+}
+
+#share_btn li.other-socials a {
+  background: #474a48;
+}
+
+#share_btn.active li.facebook a {
+  transform: translateX(64px) rotate(360deg);
+}
+
+#share_btn.active li.twitter a {
+  transform: translateX(128px) rotate(360deg);
+}
+
+#share_btn.active li.whatsapp a {
+  transform: translateX(192px) rotate(360deg);
+}
+
+#share_btn.active li.other-socials a {
+  transform: translateX(256px) rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  #share_btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 15px;
+    Left: 15px;
+  }
+
+  #share_btn:before,
+  #share_btn li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+  }
+
+  #share_btn.active:before {
+    width: 40px;
+  }
+
+  #share_btn.active li.facebook a {
+    transform: translateY(-45px) rotate(360deg);
+  }
+
+  #share_btn.active li.twitter a {
+    transform: translateY(-90px) rotate(360deg);
+  }
+
+  #share_btn.active li.whatsapp a {
+    transform: translateY(-135px) rotate(360deg);
+  }
+
+  #share_btn.active li.other-socials a {
+    transform: translateY(-180px) rotate(360deg);
+  }
+}

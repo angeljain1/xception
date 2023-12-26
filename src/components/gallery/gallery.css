@@ -1,0 +1,168 @@
+.gallery-main-container {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 500px;
+  background-image: url("./assets/bokehBg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 70px 0px 35px 0px;
+}
+
+.gallery-header {
+  width: 100%;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+
+/****************************/
+.img-gallery{
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+}
+.img-gallery h2{
+	font-weight: 800;
+	font-size: 30px;
+	z-index: 1;
+	position: relative;
+	color: #dadada;
+	margin-left: 20px;
+
+}
+.img-gallery h2 span{
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 600;
+	opacity: 0.5;
+	color: #999;
+}
+.img-gallery .gallery{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 0.75fr));
+	grid-template-rows: repeat(auto-fit, minmax(150px, 0.25fr));
+	grid-auto-flow: dense;
+	grid-gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.img-gallery .gallery div{
+	--transform: translate(var(--img-left), var(--img-top) ) scale(0.5); /*img-left and img-top variables are declared by javascript*/
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: var(--transform); /*taking value from variable*/
+}
+.img-gallery .gallery.activate div{
+	transition: 1s;
+}
+.img-gallery .gallery div.wide{
+	grid-column: span 2;
+}
+.img-gallery .gallery div.tall{
+	grid-row: span 2;
+}
+.img-gallery .gallery img{
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+	display: inline-block;
+}
+.img-gallery+.img-gallery{
+	margin-top: 40px;
+}
+
+/*Slider code*/
+#slider{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(26,26,26,0.6);
+	position: fixed;
+	top: 100vh;
+	left: 0;
+	z-index: 10;
+	display: grid;
+	place-items: center;
+	backdrop-filter: blur(3px);
+	transition: 0.3s;
+	filter: blur(2px);
+	opacity: 0;
+}
+#slider.active{
+	opacity: 1;
+	filter: blur(0px);
+	top: 0;
+}
+#slider .image{
+	height: 90vh;
+	width: 90vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+#slider .image img{
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+#slider .image h2.show{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #26262630;
+	height: 30px;
+	font-size: 25px;
+	text-align: center;
+	backdrop-filter: blur(3px);
+	color: #bfbfbf;
+	text-transform: capitalize;
+	transition: 0.2s ease-in;
+}
+#slider .image img:hover+ h2{
+	opacity: 0;
+}
+#slider .controls {
+	position: absolute;
+	top: calc(50% - 40px);
+	width: 100%;
+}
+#slider .controls > div{
+	cursor: pointer;
+	width: 40px;
+	height: 80px;
+	background: #262626;
+	position: absolute;
+	font-family: "fontAwesome";
+	line-height: 80px;
+	text-align: center;
+	color: #efefef;
+	font-size: 40px;
+}
+#slider .controls > div.disabled{
+	cursor: not-allowed;
+}
+#slider .controls .prev:before{
+	content: "\f0d9";
+}
+#slider .controls .next:before{
+	content: "\f0da";
+}
+#slider .controls .next{
+	right: 0;
+}
+@media screen and (max-width: 452px) {
+	.img-gallery .gallery{
+		grid-gap:5px;
+	}
+}
+/****************************/

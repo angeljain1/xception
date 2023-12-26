@@ -1,0 +1,128 @@
+@media (max-width: 760px) {
+  .home-footer-container-foot {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-inner-per-block, .footer-inner-per-block-address {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    flex-shrink: 0;
+  }
+  .footer-social-container {
+    width: 200px;
+    margin: 20px 10px 20px 10px;
+  }
+  .home-footer-container-foot {
+    padding: 25px 25px 5px 25px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 991px) {
+  .home-footer-container-foot {
+    flex-wrap: wrap;
+  }
+  .footer-inner-per-block, .footer-inner-per-block-address {
+    margin-bottom: 25px;
+    flex-shrink: 0;
+  }
+  .footer-social-container {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .home-footer-container-foot {
+    padding: 25px;
+  }
+}
+@media(min-width: 991px) {
+  .home-footer-container-foot {
+
+  }
+  .footer-social-container {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .home-footer-container-foot {
+    padding: 25px;
+  }
+}
+
+.home-footer-container-foot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+  background-color: #0f0f0f;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -19px 38px, rgba(0, 0, 0, 0.22) 0px -15px 12px;
+}
+
+.footer-logo-png {
+  width: 200px;
+
+}
+
+.footer-inner-per-block {
+
+  width: 155px;
+}
+
+.footer-inner-per-block-address {
+
+  width: 300px;
+}
+
+.footer-links-header {
+  font-family: "Lora", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  font-family: "Lora", sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.footer-address-link {
+  font-family: "Lora", sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.footer-social-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-brands-mod {
+  font-size: 25px;
+  color: white;
+  opacity: 0.35;
+}
+
+.footer-divider-foot {
+  width: 95%;
+  opacity: 0.5;
+  margin: 0px auto 10px auto;
+  background-color: #0f0f0f;
+}
+
+.credits-foot {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 11px;
+  color: white;
+  background-color: #0f0f0f;
+  text-align: center;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}

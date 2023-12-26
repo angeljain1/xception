@@ -1,0 +1,15 @@
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.clock {
+  width: 30px;
+}
+
+.timer {
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+}

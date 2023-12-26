@@ -1,0 +1,224 @@
+@media(max-width: 1100px) {
+  .devathon-main-inner-container {
+    width: 90%;
+  }
+
+  .devat-header {
+    font-size: 35px;
+  }
+
+  .devathon-main-inner-container {
+    padding: 10px 15px;
+  }
+
+  .devathon-inner-inner-content-container {
+    padding: 10px;
+  }
+
+  .devathon-project-main-content {
+    font-size: 13px;
+  }
+
+  .devathon-project-title-number {
+    font-family: "Lora", sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+
+  .devathon-project-title {
+    font-family: "Lora", sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+
+  ol {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1100px) {
+  .devathon-main-inner-container {
+    width: 1000px;
+  }
+
+  .devat-header {
+    font-size: 45px;
+  }
+
+  .devathon-main-inner-container {
+    padding: 10px 20px;
+  }
+
+  .devathon-inner-inner-content-container {
+    padding: 15px;
+  }
+
+  .devathon-project-main-content {
+    font-size: 15px;
+  }
+
+  .devathon-project-title-number {
+    font-family: "Lora", sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+
+  .devathon-project-title {
+    font-family: "Lora", sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+
+  ol {
+    font-size: 15px;
+  }
+}
+
+.devat-main-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("../register/assets/regBg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 70px 0px 35px 0px;
+}
+
+.devat-header {
+  font-family: "Playfair Display", sans-serif;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  text-shadow: 0 -20px 100px, 0 0 2px, 0 0 1em #ffdb51, 0 0 0.25em #ffdb51, 0 0 0.1em #ffdb51, 0 7px 3px #000;
+}
+
+.devat-reg-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-arrow-up-right-from-square {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.devat-sub-header {
+  font-family: "Lora", sans-serif;
+  color: rgb(146, 211, 255);
+  font-size: 25px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.devathon-main-inner-container {
+  border: 3px solid white;
+  margin: 25px auto;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.devathon-inner-inner-content-container {
+  margin: 25px 0px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.devathon-section-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-header-devathon {
+  font-family: "Lora", sans-serif;
+  color: white;
+  font-size: 33px;
+}
+
+.fa-angle-down {
+  color: white;
+  font-size: 22px;
+}
+
+.devathon-divider {
+  margin: 10px 0px 17.5px 0px;
+  width: 100%;
+}
+
+.devathon-project-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.devathon-project-title-number-container {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  margin-right: 15px;
+}
+
+.devathon-project-main-content {
+  font-family: "Lora", sans-serif;
+  color: white;
+  margin: 12.5px 0px 7.5px 0px;
+}
+
+.devathon-project-head {
+  font-family: "Lora", sans-serif;
+  color: white;
+  font-size: 15px;
+  margin: 12.5px 0px 0px 0px;
+}
+
+ol {
+  margin: 0px 20px;
+  font-family: "Lora", sans-serif;
+  color: white;
+}
+
+li {
+  margin: 12.5px 0px;
+}
+
+#devathon-projects,
+#devathon-rules,
+#devathon-inst {
+  display: none;
+}
+
+
+/***************Devathon Card******************/
+.devat-card-main-container {
+  width: 500px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.devat-card-upper-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7.5px;
+}
+
+.devat-card-upper-cont-content {
+  font-family: "Lora", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.devat-card-desc {
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+  color: white;
+}
